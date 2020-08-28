@@ -1,0 +1,17 @@
+{
+  "author": "Rhys Ormond <git@rhysormond.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --host 0.0.0.0"
+  },
+  "dependencies": {
+    "paper": "file:../pkg"
+  },
+  "devDependencies": {
+    "hello-wasm-pack": "^0.1.0",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "copy-webpack-plugin": "^5.0.0"
+  }
+}
