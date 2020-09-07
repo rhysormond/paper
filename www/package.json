@@ -1,6 +1,6 @@
 {
   "author": "Rhys Ormond <git@rhysormond.com>",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --host 0.0.0.0"
   },
