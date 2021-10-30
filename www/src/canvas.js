@@ -1,4 +1,4 @@
-import {memory} from "paper/paper_bg";
+import {memory} from "paper/paper_bg.wasm";
 import {Cell} from "paper";
 
 export const width = 20;

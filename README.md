@@ -5,5 +5,6 @@ Aspirationally A Rust + WASM application for creating and solving pen and paper 
 
 ## Building and running the application
  - Install `docker` and `docker-compose`
- - Run `docker-compose up --build`
+ - Run `docker-compose up`
+ - Wait for things to build
  - Visit `localhost:8080`

@@ -1,7 +1,22 @@
-version: '3'
+version: '2'
 
 services:
-  web:
-    build: .
+  rust:
+    image: rhysormond/rust-wasm
+    build:
+      context: .
+      dockerfile: rust.Dockerfile
+    working_dir: /src
+    volumes:
+      - ./:/src
+    command: ["cargo", "watch", "-i", ".gitignore", "-i", "www", "-s", "wasm-pack build"]
+
+
+  node:
+    image: node:17
+    working_dir: /src/www
+    volumes_from:
+      - rust
     ports:
       - "8080:8080"
+    command: 'bash -c "npm install && npm run start"'
